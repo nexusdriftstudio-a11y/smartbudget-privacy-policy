@@ -3,22 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Deletion Instructions for SmartBudget AI</title>
+    <title>Account Deletion Instructions for SmartBudget Pro</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
-        h1, h2 { color: #111; }
-        .container { background-color: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
-        .note { background-color: #fffbe6; border-left: 4px solid #ffc107; padding: 10px; margin: 20px 0; }
+        :root {
+            --bg-color: #ffffff;
+            --container-bg-color: #f9f9f9;
+            --text-color: #333;
+            --header-color: #111;
+            --border-color: #ddd;
+            --note-bg-color: #fffbe6;
+            --note-border-color: #ffc107;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --container-bg-color: #1e1e1e;
+                --text-color: #e0e0e0;
+                --header-color: #f5f5f5;
+                --border-color: #444;
+                --note-bg-color: #332b00;
+                --note-border-color: #ffc107;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: color 0.3s, background-color 0.3s;
+        }
+        h1, h2 {
+            color: var(--header-color);
+        }
+        .container {
+            background-color: var(--container-bg-color);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .note {
+            background-color: var(--note-bg-color);
+            border-left: 4px solid var(--note-border-color);
+            padding: 10px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Account and Data Deletion for SmartBudget AI</h1>
+        <h1>Account and Data Deletion for SmartBudget Pro</h1>
         <p><strong>Developer:</strong> NexusDrift Studio</p>
         <p>This page provides instructions on how to delete your account and all associated data from the SmartBudget AI application.</p>
 
         <div class="note">
-            <p><strong>Important:</strong> SmartBudget AI is an offline application. All your financial data is stored exclusively on your local device. We, the developers, do not have access to it. Therefore, the deletion process is performed by you directly within the app.</p>
+            <p><strong>Important:</strong> SmartBudget Pro is an offline application. All your financial data is stored exclusively on your local device. We, the developers, do not have access to it. Therefore, the deletion process is performed by you directly within the app.</p>
         </div>
 
         <h2>How to Delete Your Account and Data</h2>
